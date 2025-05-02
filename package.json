@@ -1,0 +1,26 @@
+{
+  "name": "163",
+  "version": "1.0.0",
+  "description": "![n1](preview/n1.avif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/20essentials/project-000-163.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/20essentials/project-000-163/issues"
+  },
+  "homepage": "https://github.com/20essentials/project-000-163#readme",
+  "dependencies": {
+    "handlebars": "4.7.8"
+  },
+  "devDependencies": {
+    "gh-pages": "6.3.0"
+  }
+}

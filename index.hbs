@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukate</title>
+    <meta name="google" content="notranslate" />
+    <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script id="aro-template" type="text/x-handlebars-template">
+      <div class="container">
+        {{#each items}}
+          <div class="aro" style="--r: {{this}}"></div>
+        {{/each}}
+      </div>
+    </script>
+
+    <script>
+      const context = {
+        items: Array.from({ length: 18 }, (_, i) => i + 1)
+      };
+      const source = document.getElementById("aro-template").innerHTML;
+      const template = Handlebars.compile(source);
+      document.body.innerHTML = template(context);
+    </script>
+  </body>
+</html>
